@@ -9,3 +9,4 @@ public class ProcessMessageUseCase implements MessageProcessor {
         System.out.println("Processing Kafka message: " + message);
         // Add your business logic here to process the message
     }
+}
