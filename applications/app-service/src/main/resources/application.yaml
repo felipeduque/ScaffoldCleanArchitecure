@@ -2,27 +2,16 @@ server:
   port: 8080
 spring:
   application:
-    name: "DifferentRoads"
+ name: "DifferentRoads"
   devtools:
-  h2:
+    h2:
     console:
       enabled: true
       path: "/h2"
   profiles:
-    include: null
+ include: null
   kafka:
     bootstrap-servers: localhost:9092 # Replace with your Kafka bootstrap servers
     consumer:
       group-id: my-consumer-group # Replace with your desired consumer group id
       enabled: true # This should be at the same indentation level as group-id
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "health,prometheus"
-  endpoint:
-    health:
-      probes:
-        enabled: true # This property seems out of place and might be a duplicate or a leftover. Let's keep it for now but it's worth reviewing if it's needed here.
-cors:
-  allowed-origins: "http://localhost:4200,http://localhost:8080"
