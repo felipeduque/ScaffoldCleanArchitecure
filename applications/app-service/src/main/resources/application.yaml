@@ -23,8 +23,8 @@ management:
 spring:
   kafka:
     bootstrap-servers: localhost:9092 # Replace with your Kafka bootstrap servers
-    consumer:
+    consumer: # This is correctly indented under kafka
       group-id: my-consumer-group # Replace with your desired consumer group id
-        enabled: true
+      enabled: true # This should be at the same indentation level as group-id
 cors:
   allowed-origins: "http://localhost:4200,http://localhost:8080"
