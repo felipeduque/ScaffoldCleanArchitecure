@@ -5,7 +5,8 @@ buildscript {
 		sonarVersion = '6.0.1.5171'
 		jacocoVersion = '0.8.12'
 		pitestVersion = '1.15.0'
-        lombokVersion = '1.18.36'
+		lombokVersion = '1.18.36'
+		springKafkaVersion = '3.3.2'
 	}
 }
 
