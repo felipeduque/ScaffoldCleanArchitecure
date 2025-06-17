@@ -19,7 +19,7 @@ public class KafkaConsumer {
     public void listen(String message) {
         System.out.println("Received message: " + message);
         // Simulate processing with a use case
-        processMessageUseCase.process(message);
-    }System.out.println("Processing message with MessageProcessor");
-        messageProcessor.process(message);    }
+        System.out.println("Processing message with MessageProcessor");
+        messageProcessor.process(message);
+    }
 }
