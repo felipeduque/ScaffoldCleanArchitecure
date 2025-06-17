@@ -1,6 +1,7 @@
 package co.com.differentroads.api;
 
 import co.com.differentroads.model.tour.Tour;
+import co.com.differentroads.api.kafkaconsumer.KafkaProducer;
 import co.com.differentroads.model.tour.gateways.TourRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
